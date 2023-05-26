@@ -56,12 +56,12 @@
                                             <a href="#" class="btn btn-info btn-sm">Detail</a>
 
 
-                                            <a href="#" class="btn btn-warning btn-sm">Ubah</a>
+                                            <a href="{{url('admin/divisi/edit/'.$d->id)}}" class="btn btn-warning btn-sm" >Ubah</a>
 
                                             <button type="submit" class="btn btn-danger btn-sm" name="proses" value="hapus"
                                             onclick="return confirm('Anda yakin ingin menghapus data ini?')">Hapus</button>
 
-                                            <input type="hidden" name="idx" value="">
+                                            
 
                                 
                                             
