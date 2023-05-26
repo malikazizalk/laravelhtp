@@ -19,7 +19,7 @@
                            DataTable Example -->
                            <!-- membuat tombol tambah dan mengarahkan ke file produk-FORM.php -->
 
-                           <a href="index.php?url=product_form" class="btn btn-primary btn-sm"> Tambah</a>
+                           <a href="{{url('admin/divisi/create')}}" class="btn btn-primary btn-sm"> Tambah</a>
                           
                         </div>
 
