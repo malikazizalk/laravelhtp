@@ -68,9 +68,15 @@ class PegawaiController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show( $id)
     {
         //
+        $pegawai = Pegawai::join('divisi', 'pegawai.divisi_id', '=', 'divisi.id')
+        ->join('jabatan', 'pegawai.jabatan_id', '=', 'jabatan.id')
+        ->select('pegawai.*', 'divisi.nama as divisi', 'jabatan.nama as jabatan')
+        ->where('pegawai.id', $id)
+        ->get();
+        return view('admin.pegawai.detail', compact('pegawai'));
     }
 
     /**
