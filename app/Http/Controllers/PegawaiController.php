@@ -126,6 +126,8 @@ class PegawaiController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        //menambahkan tombol hapus pada pegawai
+        DB::table('pegawai')->where('id', $id)->delete();
+        return redirect('admin/pegawai');
     }
 }
