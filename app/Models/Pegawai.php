@@ -12,7 +12,7 @@ class Pegawai extends Model
     protected $primaryKey = 'id'; // ini pemanggilan id atau primary key
     protected $fillable = [
         'nip','nama','jabatan_id','divisi_id','gender',
-        'tmp_lahir','tgl_lahir','almat','foto'
+        'tmp_lahir','tgl_lahir', 'kekayaan', 'alamat','foto'
     ]; // ini pemanggilan kolom
 
     public function divisi(){
